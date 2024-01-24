@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  justify-content: center;
+}
+
+.list-container {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  column-gap: 10%;
+  row-gap: 10%;
+}

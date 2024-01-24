@@ -1,0 +1,6 @@
+<h1 class="title">
+  {{ title }}
+</h1>
+<div class="task-container">
+  <app-task *ngFor="let task of tasks" [content]="task.content" [id]="task.id" [checked]="task.checked"></app-task>
+</div>

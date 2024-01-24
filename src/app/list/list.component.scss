@@ -1,0 +1,17 @@
+:host {
+  box-shadow: 1px 3px 3px #ccb2ff;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.title {
+  text-align: center;
+  color: #661AFF;
+}
+
+.task-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 15%;
+}
