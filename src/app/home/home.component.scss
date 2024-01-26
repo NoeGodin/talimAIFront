@@ -11,3 +11,19 @@
   column-gap: 10%;
   row-gap: 10%;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 1px 3px 3px #ccb2ff;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.input-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

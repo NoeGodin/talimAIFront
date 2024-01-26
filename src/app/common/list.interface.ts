@@ -6,5 +6,6 @@ export interface Task {
 
 export interface List {
   id: number;
-  title: string;
+  name: string;
+  tasks: Task[];
 }

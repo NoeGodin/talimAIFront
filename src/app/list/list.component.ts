@@ -11,32 +11,9 @@ import { TaskComponent } from '../task/task.component';
   styleUrl: './list.component.scss',
 })
 export class ListComponent implements OnInit {
-  @Input() title!: string;
+  @Input() name!: string;
   @Input() id!: number;
-  tasks!: Task[];
+  @Input() tasks!: Task[];
 
-  ngOnInit() {
-    this.tasks = [
-      {
-        content: 'Content 1',
-        id: 1,
-        checked: false,
-      },
-      {
-        content: 'Content 2',
-        id: 2,
-        checked: true,
-      },
-      {
-        content: 'Content 3',
-        id: 3,
-        checked: false,
-      },
-      {
-        content: 'Content 4',
-        id: 4,
-        checked: true,
-      },
-    ];
-  }
+  ngOnInit() {}
 }

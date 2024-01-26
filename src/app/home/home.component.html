@@ -1,3 +1,15 @@
 <div class="list-container">
-  <app-list *ngFor="let list of lists" [title]="list.title"></app-list>
+  <form [formGroup]="createListForm" class="form">
+    <h1>New list</h1>
+    <div class="input-container">
+      <input type="text" formControlName="name" placeholder="List name" />
+      <div>
+        <input type="text" formControlName="content" placeholder="Task" />
+        <button (click)="addTask($event)">+</button>
+      </div>
+      <app-task *ngFor="let newTask of newTasks" [content]="newTask"></app-task>
+      <button (click)="createList()" type="submit">Add</button>
+    </div>
+  </form>
+  <app-list *ngFor="let list of lists" [name]="list.name" [tasks]="list.tasks"></app-list>
 </div>
