@@ -12,8 +12,14 @@ import { TaskComponent } from '../task/task.component';
 })
 export class ListComponent implements OnInit {
   @Input() name!: string;
+  @Input() importance!: number;
   @Input() id!: number;
   @Input() tasks!: Task[];
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.sortLogic();
+  }
+  sortLogic() {
+    this.tasks.sort((a, b) => a.importance - b.importance);
+  }
 }

@@ -1,6 +1,7 @@
 <h1 class="title">
-  {{ name }}
+  <p>{{ name }}</p>
+  <p>importance : {{ importance }}</p>
 </h1>
 <div class="task-container">
-  <app-task *ngFor="let task of tasks" [content]="task.content" [id]="task.id" [checked]="task.checked"></app-task>
+  <app-task *ngFor="let task of tasks" [task]="task" [id]="task.id" [checked]="task.checked"></app-task>
 </div>

@@ -1,5 +1,6 @@
 import { NgClass } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { Task } from '../models/task.model';
 
 @Component({
   selector: 'app-task',
@@ -9,7 +10,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './task.component.scss',
 })
 export class TaskComponent {
-  @Input() content!: string;
+  @Input() task!: Task;
   @Input() id!: number;
   @Input() checked!: boolean;
 }
